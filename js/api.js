@@ -12,8 +12,11 @@ const getFunction = (countries) => {
         countryDiv.classList.add('style-country');
         countryDiv.innerHTML = `
         <h1>Name: ${country.name.common} </h1>
-        <button>details</button>
+        <button onclick = "alertlog('${country.name.common}')">details</button>
         `
         countrySection.appendChild(countryDiv);
     });
 };
+const alertlog = (countryData) => {
+    alert(countryData);
+}
