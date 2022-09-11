@@ -11,6 +11,27 @@
             text-align: center;
             background-color: blanchedalmond;
         }
+
+        .uppersection {
+            display: flex;
+            justify-content: center;
+        }
+
+        #btn-click {
+            background-color: blue;
+            color: aliceblue;
+            border-radius: 5px;
+        }
+
+        .countries-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .style-country {
+            border: 1px solid grey;
+        }
     </style>
 </head>
 
@@ -21,10 +42,15 @@
 
     <main>
         <section>
+            <div class='uppersection'>
+                <button onclick="loadCountries()" id='btn-click'> click to load countries</button>
+            </div>
+            <div class='countries-container' id='countries-section'>
 
+            </div>
         </section>
     </main>
-    <script src="js/api.js"></script>
+    <script src=" js/api.js"></script>
 </body>
 
 </html>
